@@ -7,7 +7,7 @@ export default function RemoveBtn({id}){
         const comfirmed = confirm("Are you sure!");
 
         if(comfirmed){
-            const res= await fetch(`http://localhost:3000/api/topics?id=${id}`, {
+            const res= await fetch(`https://kysotra-crud.netlify.app/api/topics?id=${id}`, {
                 method: "DELETE",
             });
             if(res.ok){

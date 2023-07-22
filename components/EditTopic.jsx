@@ -10,7 +10,7 @@ export default function EditTopic({id, title, description}){
     const handleSubmit= async (e)=>{
         e.preventDefault();
         try { 
-            const res= await fetch(`http://localhost:3000/api/topics/${id}`,{
+            const res= await fetch(`https://kysotra-crud.netlify.app/api/topics/${id}`,{
                 method:"PUT",
                 headers:{
                     "Content-type": "application/json",

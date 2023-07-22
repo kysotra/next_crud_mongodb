@@ -3,7 +3,7 @@ import EditTopic from '@/components/EditTopic'
 import React from 'react'
 const getTopicById= async(id)=>{
     try {
-        const res= await fetch(`http://localhost:3000/api/topics/${id}`, {
+        const res= await fetch(`https://kysotra-crud.netlify.app/api/topics/${id}`, {
             cache:'no-store'
         })
         if(!res.ok){

@@ -8,7 +8,7 @@ const getTopics = async ()=>{
     const router=useRouter();
     try {
         
-        const res= await fetch(`http://localhost:3000/api/topics`,{
+        const res= await fetch(`https://kysotra-crud.netlify.app/api/topics`,{
             cache: "no-store"
         })
         if(!res.ok){
